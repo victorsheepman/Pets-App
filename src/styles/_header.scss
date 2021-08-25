@@ -1,0 +1,57 @@
+.header{
+    width: 327px;
+    height: 211px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__categorias{
+        width: 100%;
+        height: 113px;
+    }
+    &__container{
+        width: 100%;
+        height: 80px;
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__dog{
+        width: 156px;
+        height: 80px;
+        border-radius: 8px;
+        background-color: $color-black;
+        display: flex;
+        align-items: center;
+        border: unset;
+        figure{
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: $color-green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 8px;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        p{
+            color: $color-white;
+            margin-left:16px; 
+        }
+        a{
+            width: 100%;
+            height:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: unset;
+
+        }
+    }
+    &__cat{
+        @extend .header__dog;
+    }
+}

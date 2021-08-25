@@ -1,0 +1,85 @@
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
+  \***************************************************************************************************************/
+h1, .bold {
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left; }
+
+.bold {
+  font-weight: 800; }
+
+h2 {
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left; }
+
+.sub-1 {
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.0015em;
+  text-align: left; }
+
+.sub-2 {
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.001em;
+  text-align: left; }
+
+.body-1, .body-1-bold {
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  text-align: left; }
+
+.body-1-bold {
+  font-weight: 700; }
+
+.body-2, .body-2-bold {
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.005em;
+  text-align: left; }
+
+.body-2-bold {
+  font-weight: 700; }
+
+.button {
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.0125em;
+  text-align: left;
+  color: #FFFFFE; }
+
+.caption {
+  font-family: Nunito;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.004em;
+  text-align: left; }
+
