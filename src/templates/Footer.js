@@ -1,6 +1,7 @@
 const Footer = () => {
     const view =
-    `  
+    `   
+          
             <button class="footer__button" value="0">
                 <a href="/#">
                     <img src="assets/icons/house.svg" alt="">
@@ -22,8 +23,7 @@ const Footer = () => {
                 <a href="/#">
                     <img src="assets/icons/search.svg" alt="">
                 </a>
-            </button>
-        </footer>`;
+            </button>`;
     return view;
 }
 

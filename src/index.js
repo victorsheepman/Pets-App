@@ -1,7 +1,6 @@
-import "./styles/main.scss";//sass
-import "./utils/loader";//loaders
-//import "./utils/footer";
-import router from "./routes/index";//enrutador
+import "./styles/main.scss";
+import "./utils/loader";
+import router from "./routes/index";
 window.addEventListener('load', router);
 
 window.addEventListener('hashchange', router);

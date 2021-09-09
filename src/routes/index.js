@@ -4,6 +4,7 @@ import getHash from '../utils/getHash';
 import resolveRoutes from '../utils/resolveRoutes';
 import { cat } from '../utils/Options';
 import { dog } from '../utils/Options';
+import { footerDinamic } from '../utils/footer';
 const routes = {
     '/': Home,
     //'/:favotitos': favoritos
@@ -22,8 +23,7 @@ const router = async ()=>{
     content.innerHTML = await render();
 
     cat();
-    dog();
-
+    footerDinamic();
 }
 
 export default router;
