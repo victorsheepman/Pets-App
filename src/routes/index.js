@@ -2,7 +2,8 @@ import Footer from '../templates/Footer';
 import Home from '../pages/Home';
 import getHash from '../utils/getHash';
 import resolveRoutes from '../utils/resolveRoutes';
-
+import { cat } from '../utils/Options';
+import { dog } from '../utils/Options';
 const routes = {
     '/': Home,
     //'/:favotitos': favoritos
@@ -14,12 +15,14 @@ const router = async ()=>{
     
     footer.innerHTML = await Footer();
     let hash = getHash();
-    console.log(hash);
     let route = await resolveRoutes(hash);
     
     let render =  routes[route] ? routes[route] : Error404;
     
     content.innerHTML = await render();
+
+    cat();
+    dog();
 
 }
 

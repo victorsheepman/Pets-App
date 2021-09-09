@@ -1,4 +1,4 @@
-
+import router from "../routes/index";
 //Detalle
 let $botonDetalle = document.getElementById('detalleBtn');
 let $botonHistoria = document.querySelector('#historiaBtn');
@@ -9,7 +9,6 @@ let $historia = document.querySelector('#historia');
 
 //acciones
 $botonDetalle.addEventListener('click', () => {
-    debugger;
     $detalle.style.animation="detalle 0.5s linear forwards";
 })
 $botonHistoria.addEventListener('click', () => {
