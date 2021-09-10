@@ -5,9 +5,9 @@ export const footerDinamic = ()=>{
         const valueNode = node.value;
         for (let i = 0; i < 4; i++) {
             if($footer.children[i].value === valueNode){
-                $footer.children[i].classList.add("button-black");
+                $footer.children[i].classList.add(`button-black-${i}`);
             }else{
-                $footer.children[i].classList.remove("button-black");
+                $footer.children[i].classList.remove(`button-black-${i}`);
             }
         }
     })

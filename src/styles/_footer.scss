@@ -21,10 +21,27 @@
         display: none;
     }
 }
-.button-black{
-    @include button(100px);
+%button-black{ 
     p{
         display: inline;
+        color: #85D1CE;
     }
     transition: 0.2s all ease-in;
+}
+.button-black-0{
+    @extend %button-black;
+    @include button(102px);
+}
+.button-black-1{
+    @extend %button-black;
+    @include button(124px); 
+}
+.button-black-2{
+    @extend %button-black;
+    @include button(122px);  
+}
+.button-black-3{
+    @extend %button-black;
+    @include button(98px);  
+
 }
