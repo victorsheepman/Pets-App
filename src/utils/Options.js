@@ -1,5 +1,7 @@
 import { catTemplate } from "../templates/cat";
 import { dogTemplate } from "../templates/dog";
+import { modal } from "./modal";
+
 
 export const cat = () => {
     const $container = document.querySelector('#contentHome');
@@ -10,8 +12,13 @@ export const cat = () => {
     });
 
 
+
     const $dog = document.querySelector('#dog');
     $dog.addEventListener('click', ()=>{
         $container.innerHTML = dogTemplate();
+        modal();
     });
+
+   
+    
 }
