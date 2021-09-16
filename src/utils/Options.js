@@ -6,7 +6,7 @@ import { modal } from "./modal";
 export const cat = () => {
     const $container = document.querySelector('#contentHome');
     const $cat = document.querySelector('#cat');
-    console.log($cat);
+
     $cat.addEventListener('click', ()=>{
         $container.innerHTML = catTemplate();
     });
@@ -18,7 +18,6 @@ export const cat = () => {
         $container.innerHTML = dogTemplate();
         modal();
     });
-
-   
     
+
 }

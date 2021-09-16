@@ -1,18 +1,28 @@
-const $modal = document.getElementById("content");
 
+import { pet } from "../templates/pet";
 
 export const modal = ()=>{
     const $container = document.querySelector('#contentHome');
-    const modalPet = $modal.children[2];
+    const modalPet = document.querySelector('#petmodal');
 
     for (let i = 0; i < $container.children.length; i++) {
-       $container.children[i].addEventListener('click', ()=>{
+       $container.children[i].addEventListener('click', (event)=>{ 
+            const value = event.path[1].getAttribute('value');
+            getValue(value);
             modalPet.classList.remove('close');
             modalPet.classList.add("open");
+           
        });
     }
-    modalPet.children[2].addEventListener('click', ()=>{
-        modalPet.classList.remove('open');
-        modalPet.classList.add("close");
-    })
+   
+    function getValue(id) {
+        modalPet.innerHTML = pet(id);
+        modalPet.children[1].addEventListener('click', ()=>{
+            modalPet.classList.remove('open');
+            modalPet.classList.add("close");
+        });
+    }
 }
+
+
+
