@@ -16,7 +16,7 @@ const Footer = () => {
 
             </button>
             <button class="footer__button"  value="2">
-                <a href="/#">
+                <a href="#/2/">
                     <img src="assets/icons/heart.svg" alt="">
                 </a> 
                 <p class = "body-2">Favoritos</p>

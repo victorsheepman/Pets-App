@@ -1,4 +1,4 @@
-export const footerDinamic = ()=>{
+export const footerDinamic = (ruta)=>{
     const $footer = document.querySelector('#footer');
     $footer.addEventListener('click', (event)=>{
         const node = event.path[2];

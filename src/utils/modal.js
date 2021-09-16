@@ -1,5 +1,7 @@
 
 import { pet } from "../templates/pet";
+import { getFavorite } from "./like";
+
 
 export const modal = ()=>{
     const $container = document.querySelector('#contentHome');
@@ -21,6 +23,8 @@ export const modal = ()=>{
             modalPet.classList.remove('open');
             modalPet.classList.add("close");
         });
+        const buttonLike = document.querySelector('#like');
+        buttonLike.addEventListener('click', getFavorite);
     }
 }
 
