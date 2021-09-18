@@ -52,7 +52,11 @@
 
         }
     }
+
     &__cat{
         @extend .header__dog;
     }
+}
+.opacity{
+    opacity: 50%;
 }

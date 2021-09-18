@@ -2,12 +2,13 @@ import Footer from '../templates/Footer';
 import Home from '../pages/Home';
 import getHash from '../utils/getHash';
 import resolveRoutes from '../utils/resolveRoutes';
-import { cat } from '../utils/Options';
+import { cat, initApp } from '../utils/Options';
 import { footerDinamic } from '../utils/footer';
 import Fav from '../pages/fav';
 import Message from '../pages/Message';
 import { chat } from '../utils/chat';
 import register from '../pages/register';
+
 
 const routes = {
     '/': Home,
@@ -28,6 +29,7 @@ const router = async ()=>{
     content.innerHTML = await render();
     if(route === '/'){
         cat();
+        
     }
     if(route === '/:chat'){
         chat();
