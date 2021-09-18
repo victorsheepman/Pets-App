@@ -5,9 +5,7 @@ export const footerDinamic = (ruta)=>{
 }
 
 function remove(value) {
-    if(value == '/'){
-        value = 0;
-    }else if(value == '1'){
+   if(value == '1'){
         value = 1;
     }
     else if (value == '2') {
@@ -15,10 +13,9 @@ function remove(value) {
     }else if(value == '3'){
         value = 3;
     }else{
-        value = 4
+        value = 0;
     }
-    for(let i = 0; i < 3; i++){
-        
+    for(let i = 0; i < $footer.children.length; i++){
         if($footer.children[i].value == value){
            $footer.children[i].classList.add(`button-black-${i}`);
         }else{

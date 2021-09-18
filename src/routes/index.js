@@ -22,7 +22,6 @@ const router = async ()=>{
     footer.innerHTML = await Footer();
     let hash = getHash();
     let route = await resolveRoutes(hash);
-    debugger;
     footerDinamic(hash);
     let render =  routes[route] ? routes[route] : Error404;
     
