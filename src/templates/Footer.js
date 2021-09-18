@@ -9,7 +9,7 @@ const Footer = () => {
                 <p class = "body-2">House</p>
             </button>
             <button class="footer__button" value="1">
-                <a href="/#">
+                <a href="#/1/">
                     <img src="assets/icons/message.svg" alt="">
                 </a>
                 <p class = "body-2">Mensajes</p>
@@ -22,7 +22,7 @@ const Footer = () => {
                 <p class = "body-2">Favoritos</p>
             </button>
             <button class="footer__button"  value="3">
-                <a href="/#">
+                <a href="#/3/">
                     <img src="assets/icons/search.svg" alt="">
                 </a>
                 <p class = "body-2">Perfil</p>

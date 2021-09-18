@@ -5,6 +5,14 @@ const resolveRoutes = (route) => {
             validRoute = '/:favoritos';
             return validRoute;
         }
+        if(validRoute == 1){
+            validRoute = '/:chat';
+            return validRoute;
+        }
+        if(validRoute == 3){
+            validRoute = '/:register';
+            return validRoute;
+        }
     }
     return `${route}`;
 }

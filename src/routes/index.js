@@ -3,14 +3,17 @@ import Home from '../pages/Home';
 import getHash from '../utils/getHash';
 import resolveRoutes from '../utils/resolveRoutes';
 import { cat } from '../utils/Options';
-import { dog } from '../utils/Options';
 import { footerDinamic } from '../utils/footer';
-import { pet } from '../templates/pet';
-import { sentToFavorite } from '../utils/like';
 import Fav from '../pages/fav';
+import Message from '../pages/Message';
+import { chat } from '../utils/chat';
+import register from '../pages/register';
+
 const routes = {
     '/': Home,
-    '/:favoritos': Fav
+    '/:favoritos': Fav,
+    '/:chat':Message,
+    '/:register':register
 }
 
 const router = async ()=>{
@@ -18,16 +21,19 @@ const router = async ()=>{
     const footer = null || document.querySelector('#footer');
     footer.innerHTML = await Footer();
     let hash = getHash();
-    console.log(hash);
     let route = await resolveRoutes(hash);
-    console.log(route);
-
-    
+    debugger;
+    footerDinamic(hash);
     let render =  routes[route] ? routes[route] : Error404;
     
     content.innerHTML = await render();
-    cat();
-    footerDinamic(route);  
+    if(route === '/'){
+        cat();
+    }
+    if(route === '/:chat'){
+        chat();
+    }
+      
 }
 
 export default router;
