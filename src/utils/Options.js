@@ -9,6 +9,7 @@ export const cat = () => {
 
     $cat.addEventListener('click', ()=>{
         $container.innerHTML = catTemplate();
+        modal();
     });
 
 

@@ -5,7 +5,8 @@ export let pets = [
       raza:"Rottweiler",
       age:"3",
       like: false,
-      img: "assets/images/rocky.png"
+      img: "assets/images/rocky.png",
+      sex:"assets/icons/male.png"
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ export let pets = [
         raza:"Golden retriever",
         age:"4",
         like: false,
-        img: "assets/images/chester.png"
+        img: "assets/images/chester.png",
+        sex:"assets/icons/male.png"
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ export let pets = [
         raza:"Chihuahua",
         age:"2",
         like: false,
-        img: "assets/images/papi.png" 
+        img: "assets/images/papi.png",
+        sex:"assets/icons/male.png" 
     },
     {
         id: 4,
@@ -29,35 +32,40 @@ export let pets = [
         raza:"Bichón frisé",
         age:"3",
         like: false, 
-        img:"assets/images/pelusa.png"
+        img:"assets/images/pelusa.png",
+        sex:"assets/icons/female.png" 
     },
     {
         id: 5,
         firstName: "Matilde",
         raza:"British Shorthair",
         age:"6",
-        like: false 
+        like: false,
+        sex:"assets/icons/female.png"  
     },
     {
         id: 6,
         firstName: "Pelusa",
         raza:"Birmano",
         age:"4",
-        like: false 
+        like: false,
+        sex:"assets/icons/female.png"  
     },
     {
         id: 7,
         firstName: "Kity",
         raza:"Bombay",
         age:"3",
-        like: false
+        like: false,
+        sex:"assets/icons/female.png" 
     },
     {
         id: 8,
         firstName: "Bombón",
         raza:"Gato americano ",
         age:"3",
-        like: false
+        like: false,
+        sex:"assets/icons/female.png" 
     }
   ];
   

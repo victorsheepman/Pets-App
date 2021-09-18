@@ -13,7 +13,7 @@ export const modal = ()=>{
             getValue(value);
             modalPet.classList.remove('close');
             modalPet.classList.add("open");
-           
+           debugger;
        });
     }
    
