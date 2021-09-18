@@ -1,8 +1,11 @@
 .userModal{
     width: 100%;
-    height: 624px;
+    height: 133%;
     background-color: $color-pink;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     top: 0px;
     left: -380px;
     &__header{

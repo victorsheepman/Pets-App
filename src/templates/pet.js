@@ -8,7 +8,9 @@ export const pet =  (value = 1)=>{
             <div class="pet__name">
                 <div>
                     <h3 >${list.firstName}</h3>
-                    <img src=${list.sex} alt="">
+                    <figure class="pet__name__sex">
+                        <img src=${list.sex} alt="">
+                    </figure>
                 </div>
                 <figure id="like">
                     <svg width="24" height="22" viewBox="0 0 24 22" fill="#D9D4E7" xmlns="http://www.w3.org/2000/svg">
